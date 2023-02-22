@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="../css/design.css">
     <title>DESIGN</title>
 </head>
+
 <body>
     <!-- header start -->
     <header class="header">
@@ -29,33 +35,58 @@
     <!-- tag start -->
     <section class="tag">
         <div class="inner">
-            <p class="tag-txt">로고</p>
-            <p class="tag-txt">디자인</p>
-            <p class="tag-txt">공모전</p>
-            <p class="tag-txt">이런 느낌의 것들의 모임</p>
+            <p class="tag-txt">#로고</p>
+            <p class="tag-txt">#디자인</p>
+            <p class="tag-txt">#공모전</p>
+            <p class="tag-txt">#이런 느낌인 것들의 모임</p>
         </div>
     </section>
     <!-- tag end -->
     <!-- sideImage start -->
     <section class="sideImage">
         <div class="inner">
-            <img src="" alt="">
+            <div class="side-img"></div>
         </div>
     </section>
     <!-- sideImage end -->
     <!-- thumbnail start -->
     <section class="thumbnail">
-        <div>swiper</div>
-        <div>See Details <span>↗</span></div>
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+        </div>
+        <div class="thum-see">
+            <p class="thum-txt">
+                See Details
+                <span class="thum-arrow">↗</span>
+            </p>
+        </div>
+        <div class="swiper-button-next sw-next"><i class="xi-angle-right"></i></div>
+        <div class="swiper-button-prev sw-prev"><i class="xi-angle-left"></i></div>
+        <p class="thum-line"></p>
     </section>
     <!-- thumbnail end -->
     <!-- explain start -->
     <section class="explain">
-        <div>
-            <h3>멋진 제목이 될거야</h3>
-            <p>멋진 설명이 될거야</p>
+        <div class="ex-inner">
+            <h3 class="ex-title">멋진 제목이 될거야</h3>
+            <p class="ex-detail">멋진 설명이 될거야</p>
+            <p class="ex-detail">멋진 설명이 될거야</p>
+            <p class="ex-detail">멋진 설명이 될거야</p>
+            <p class="ex-detail">멋진 설명이 될거야</p>
+            <p class="ex-detail">멋진 설명이 될거야</p>
+            <p class="ex-detail">멋진 설명이 될거야</p>
         </div>
     </section>
     <!-- explain end -->
 </body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="../js/design.js"></script>
 </html>

@@ -61,8 +61,10 @@ body {
 /* -------기본 세팅---------- */
 /* 내용 */
 .header {
+    position: relative;
     width: 100%;
     height: 100%;
+    z-index: 9999999999;
 }
 
 .hea_cnt {
@@ -99,4 +101,5 @@ body {
 .hea_a:hover {
     background-color: var(--font-co);
     color: var(--back-co);
+    transition: all 0.8s ease-in-out;
 }

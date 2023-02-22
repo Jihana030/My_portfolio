@@ -42,25 +42,28 @@ img {
 
 html {
     font: 16px;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
 body {
-    font-family: "Labrada";
+    font-family: "Labrada", 'NotoSans';
     font-size: 16px;
     line-height: 1;
     letter-spacing: 0;
     word-break: keep-all;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 /* -------기본 세팅---------- */
-/* 내용 */
+/* header */
 .header {
+    position: fixed;
     width: 100%;
-    height: 100%;
+    top: 0;
+    z-index: 9999999999;
 }
 
 .hea_cnt {
@@ -84,10 +87,11 @@ body {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    font-weight: 800;
     font-size: 30px;
     line-height: 40px;
     letter-spacing: -0.02em;
+    transition: font-size 0.8s;
+    transition: line-height 0.8s;
 }
 
 .hea_a:hover {
@@ -99,3 +103,147 @@ body {
     background-color: var(--font-co);
     color: var(--back-co);
 }
+
+@media screen and (max-width:1280px) {
+    .hea_a {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+/* header ------------------------- */
+
+/* tag */
+.tag {
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+    margin-left: 10vh;
+}
+.tag-txt {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    padding-bottom: 10px;
+}
+@media screen and (max-width: 1280px) {
+    .tag-txt {
+        font-size: 30px;
+    }
+}
+/* tag-------------------------------- */
+/* sideImage */
+.sideImage {
+    position: absolute;
+    right: -26px;
+    top: -12vw;
+}
+
+.side-img {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    background-color: rgb(163, 151, 198);
+    z-index: 1;
+}
+/* sideImage---------------------------- */
+/* thumbnail */
+.thumbnail {
+    position: relative;
+    width: 70vw;
+    margin-left: 4vw;
+}
+
+.mySwiper {
+    width: 45vw;
+    height: 377px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--back-co);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sw-prev,
+.sw-next {
+    position: absolute;
+    opacity: 1 !important;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--font-co);
+    border-radius: 50%;
+}
+
+.sw-prev::after,
+.sw-next::after {
+    display: none;
+}
+.sw-next {
+    right: 0;
+    color: var(--font-co);
+}
+.sw-prev {
+    left: 0;
+    color: var(--font-co);
+}
+
+.thum-see {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    text-align: center;
+    border: 1px solid var(--font-co);
+    border-radius: 50%;
+    left: 30%;
+    bottom: -25%;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.thum-line::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 55vw;
+    height: 1px;
+    background-color: var(--font-co);
+    z-index: 0;
+    top: 48%;
+    left: 10%;
+}
+/* thumnail---------------------- */
+/* explain */
+.explain {
+    position: absolute;
+    width: 100%;
+    right: 7vw;
+}
+.ex-inner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-bottom: 1vw;
+    transition: all 0.7s;
+}
+.ex-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1280px) {
+    .ex-title {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 820px) {
+    .ex-inner {
+        top: 13vh;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+/* explain-------------------------------- */
