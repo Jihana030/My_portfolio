@@ -42,7 +42,7 @@ img {
 
 html {
     font: 16px;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
@@ -54,7 +54,7 @@ body {
     word-break: keep-all;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* -------기본 세팅---------- */
@@ -92,6 +92,11 @@ body {
     letter-spacing: -0.02em;
     transition: font-size 0.8s;
     transition: line-height 0.8s;
+    color: var(--font-co);
+}
+
+.hea_this {
+    color: var(--back-co);
 }
 
 .hea_a:hover {
@@ -119,32 +124,77 @@ body {
     margin-bottom: 3vh;
     margin-left: 10vh;
 }
+
 .tag-txt {
     font-size: 40px;
     font-weight: 600;
     letter-spacing: -0.02em;
     padding-bottom: 10px;
 }
+
 @media screen and (max-width: 1280px) {
     .tag-txt {
         font-size: 30px;
     }
 }
+
 /* tag-------------------------------- */
 /* sideImage */
 .sideImage {
     position: absolute;
     right: -26px;
     top: -12vw;
+    width: 40vw;
+    height: 40vw;
 }
-
+.sideImage .inner {
+    width: 40vw;
+    height: 40vw;
+}
 .side-img {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 30vw;
     height: 30vw;
     border-radius: 50%;
     background-color: rgb(163, 151, 198);
     z-index: 1;
 }
+.side-2th {
+    position: absolute;
+    transform: scale(0.5);
+    transform-origin: 10px center;
+    animation: pulse-me 2s linear infinite;
+}
+
+.side-3th {
+    position: absolute;
+    transform: scale(0.5);
+    transform-origin: 200px 300px;
+    animation: pulse-me 2s linear infinite;
+}
+
+@keyframes pulse-me {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    70% {
+        opacity: 0.09;
+    }
+
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
 /* sideImage---------------------------- */
 /* thumbnail */
 .thumbnail {
@@ -153,11 +203,12 @@ body {
     margin-left: 4vw;
 }
 
-.mySwiper {
+.thumbnail .mySwiper {
     width: 45vw;
     height: 377px;
 }
-.swiper-slide {
+
+.thum-slide {
     text-align: center;
     font-size: 18px;
     background: var(--back-co);
@@ -176,14 +227,43 @@ body {
     border-radius: 50%;
 }
 
+.sw-prev:hover {
+    animation: scroll-prev .5s ease-in alternate infinite;
+}
+
+.sw-next:hover {
+    animation: scroll-next .5s ease-in alternate infinite;
+}
+
+@keyframes scroll-next {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(8px);
+    }
+}
+@keyframes scroll-prev {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-8px);
+    }
+}
+
 .sw-prev::after,
 .sw-next::after {
     display: none;
 }
+
 .sw-next {
     right: 0;
     color: var(--font-co);
 }
+
 .sw-prev {
     left: 0;
     color: var(--font-co);
@@ -203,19 +283,65 @@ body {
     bottom: -25%;
     z-index: 9;
     cursor: pointer;
+    font-weight: 800;
+    transition: all 0.8s;
+}
+
+.thum-see:hover {
+    animation: thumSee .5s ease-in alternate infinite;;
+}
+@keyframes thumSee {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.thum-txt {
+    margin-right: 20px;
+    transition: all 0.8s;
+}
+
+.thum-arrow {
+    position: absolute;
+    bottom: 30%;
+    left: 60%;
+    transition: all 0.8s;
 }
 
 .thum-line::after {
     position: absolute;
     display: inline-block;
     content: "";
-    width: 55vw;
+    width: 56vw;
     height: 1px;
     background-color: var(--font-co);
     z-index: 0;
     top: 48%;
     left: 10%;
 }
+
+@media screen and (max-width:1280px) {
+    .thum-see {
+        width: 100px;
+        height: 100px;
+        bottom: -20%;
+    }
+
+    .thum-txt {
+        margin-right: 10px;
+    }
+
+    .thum-arrow {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+    }
+}
+
 /* thumnail---------------------- */
 /* explain */
 .explain {
@@ -223,6 +349,7 @@ body {
     width: 100%;
     right: 7vw;
 }
+
 .ex-inner {
     position: absolute;
     right: 0;
@@ -230,20 +357,24 @@ body {
     padding-bottom: 1vw;
     transition: all 0.7s;
 }
+
 .ex-title {
     font-size: 40px;
     margin-bottom: 20px;
 }
+
 @media screen and (max-width: 1280px) {
     .ex-title {
         font-size: 30px;
     }
 }
-@media screen and (max-width: 820px) {
+
+@media screen and (max-width: 950px) {
     .ex-inner {
         top: 13vh;
         margin-bottom: 0;
         padding-bottom: 0;
     }
 }
+
 /* explain-------------------------------- */
