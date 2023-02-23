@@ -95,15 +95,11 @@ body {
 }
 
 .hea_this {
-    color: var(--back-co);
-}
-
-.hea_a:hover {
     background-color: var(--font-co);
     color: var(--back-co);
 }
 
-.hea_design {
+.hea_a:hover {
     background-color: var(--font-co);
     color: var(--back-co);
 }
