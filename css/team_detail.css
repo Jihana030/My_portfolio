@@ -53,6 +53,7 @@ body {
     letter-spacing: 0;
     word-break: keep-all;
     width: 100%;
+    min-height: 100%;
     overflow-x: hidden;
 }
 
@@ -157,7 +158,10 @@ body {
 }
 /* skill----------------------------- */
 /* issue */
+.issue {
+}
 .issue .inner {
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -165,4 +169,5 @@ body {
     margin: 100px 0;
     background-color: var(--back-co);
 }
+
 /* issue----------------------------- */
