@@ -3,11 +3,11 @@
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
-        effect: "fade",gi
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
         },
+        effect: "fade",
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
