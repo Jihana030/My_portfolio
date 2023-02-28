@@ -170,11 +170,16 @@ body {
     border-bottom: 1px solid var(--font-co);
     padding-left: 50px;
 }
+.sk-mysw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 1200px !important;
+    height: 600px;
+}
 .sk-slide {
     margin-top: 50px;
-    padding-left: 50px;
-    width: 1200px;
-    height: 600px;
 }
 .sk-sw {
     width: 1200px !important;

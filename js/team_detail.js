@@ -3,9 +3,10 @@
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
+        effect: "fade",gi
         autoplay: {
             delay: 2500,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
         },
         pagination: {
             el: ".swiper-pagination",
