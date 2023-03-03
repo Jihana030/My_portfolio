@@ -14,7 +14,9 @@
 /* 지정변수 */
 :root {
     --font-co: #1e1e1e;
+    --font-co2: #fff;
     --back-co: #c2c2c2;
+    --back-co2: #cdac7d;
 }
 
 /* 절대로 위의 줄은 1번 줄에 배치 */
@@ -76,8 +78,8 @@ body {
 
 .hea_top {
     display: table;
-    background-color: var(--back-co);
-    columns: var(--font-co);
+    background-color: var(--back-co2);
+    columns: var(--font-co2);
     cursor: pointer;
     width: calc(100% / 4);
     height: 10%;
@@ -92,17 +94,17 @@ body {
     letter-spacing: -0.02em;
     transition: font-size 0.8s;
     transition: line-height 0.8s;
-    color: var(--font-co);
+    color: var(--font-co2);
 }
 
 .hea_this {
     background-color: var(--font-co);
-    color: var(--back-co);
+    color: var(--back-co2);
 }
 
 .hea_a:hover {
     background-color: var(--font-co);
-    color: var(--back-co);
+    color: var(--back-co2);
 }
 
 @media screen and (max-width:1280px) {
@@ -115,7 +117,7 @@ body {
 /* header ------------------------- */
 /* profile */
 .profile {
-    margin: 100px;
+    margin: 170px 100px 50px 100px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -131,6 +133,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 30px;
+    padding-bottom: 20px;
 }
 .wel_detail {
     font-size: 24px;
@@ -142,13 +145,32 @@ body {
 }
 /* profile----------------------------------------- */
 /* triangle */
+.down-triangle {
+    position: relative;
+}
 .down-arrow {
     display: flex;
     flex-direction: column;
     font-size: 30px;
-    color: var(--back-co);
+    color: #cdac7d;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 50%;
+    animation: arrow 0.8s infinite;
+}
+@keyframes arrow {
+    0% {top: 0px;}
+    10% {top: 5px;}
+    20% {top: 10px;}
+    30% {top: 15px;}
+    40% {top: 20px;}
+    50% {top: 30px;}
+    60% {top: 20px;}
+    70% {top: 15px;}
+    80% {top: 10px;}
+    90% {top: 5px;}
+    100% {top: 0px;}
 }
 .down-big, .down-small {
     text-align: center;
@@ -156,8 +178,7 @@ body {
 /* triangle------------------------------------------------------- */
 /* cover_letter */
 .cover_letter {
-    margin: 100px;
-    margin-left: 0;
+    margin: 250px 100px 100px 0;
 }
 .co-dnone {
     display: none;
@@ -169,6 +190,8 @@ body {
     padding-left: 130px;
     border-bottom: 1px solid var(--font-co);
     display: inline-block;
+    color: #ad774e;
+    font-weight: 700;
 }
 .detail {
     font-size: 20px;
@@ -181,9 +204,11 @@ body {
     font-size: 20px;
 }
 .co-yes {
-    padding-right: 50px;
+    margin-right: 50px;
+    padding: 0 5px;
 }
 .co-ques {
     padding-right: 50px;
+    font-weight: 700;
 }
 /* cover_letter---------------------------------------------- */
