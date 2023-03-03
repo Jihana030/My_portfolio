@@ -111,3 +111,28 @@ body {
 }
 
 /* header ------------------------- */
+/* profile */
+.profile {
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    color: var(--font-co);
+}
+.welcome {
+    margin-left: 50px;
+}
+.wel_ment {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+.wel_detail {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.wel_span {
+    padding: 10px 0;
+}
+/* profile----------------------------------------- */
