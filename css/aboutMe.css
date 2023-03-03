@@ -153,10 +153,37 @@ body {
 .down-big, .down-small {
     text-align: center;
 }
-.co-block {
-    display: block;
-}
-.cover-cnt {
-    font-size: 24px;
-}
 /* triangle------------------------------------------------------- */
+/* cover_letter */
+.cover_letter {
+    margin: 100px;
+    margin-left: 0;
+}
+.co-dnone {
+    display: none;
+}
+.title {
+    font-size: 24px;
+    padding: 30px;
+    padding-bottom: 10px;
+    padding-left: 130px;
+    border-bottom: 1px solid var(--font-co);
+    display: inline-block;
+}
+.detail {
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    padding: 30px 150px;
+}
+.co-down {
+    margin: 100px;
+    font-size: 20px;
+}
+.co-yes {
+    padding-right: 50px;
+}
+.co-ques {
+    padding-right: 50px;
+}
+/* cover_letter---------------------------------------------- */
