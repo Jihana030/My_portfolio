@@ -33,6 +33,8 @@ li {
 
 a {
     text-decoration: none;
+    color: var(--font-co);
+    cursor: pointer;
 }
 
 img {
@@ -119,6 +121,9 @@ body {
     align-items: flex-end;
     color: var(--font-co);
 }
+.pro_img {
+    opacity: 0.3;
+}
 .welcome {
     margin-left: 50px;
 }
@@ -136,3 +141,22 @@ body {
     padding: 10px 0;
 }
 /* profile----------------------------------------- */
+/* triangle */
+.down-arrow {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: var(--back-co);
+    justify-content: center;
+    align-items: center;
+}
+.down-big, .down-small {
+    text-align: center;
+}
+.co-block {
+    display: block;
+}
+.cover-cnt {
+    font-size: 24px;
+}
+/* triangle------------------------------------------------------- */
