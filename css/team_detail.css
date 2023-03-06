@@ -14,7 +14,9 @@
 /* 지정변수 */
 :root {
     --font-co: #1e1e1e;
+    --font-co2: #fff;
     --back-co: #c2c2c2;
+    --back-co2: #cdac7d;
 }
 
 /* 절대로 위의 줄은 1번 줄에 배치 */
@@ -75,8 +77,8 @@ body {
 
 .hea_top {
     display: table;
-    background-color: var(--back-co);
-    columns: var(--font-co);
+    background-color: var(--back-co2);
+    columns: var(--font-co2);
     cursor: pointer;
     width: calc(100% / 4);
     height: 10%;
@@ -91,17 +93,17 @@ body {
     letter-spacing: -0.02em;
     transition: font-size 0.8s;
     transition: line-height 0.8s;
-    color: var(--font-co);
+    color: var(--font-co2);
 }
 
 .hea_this {
     background-color: var(--font-co);
-    color: var(--back-co);
+    color: var(--back-co2);
 }
 
 .hea_a:hover {
     background-color: var(--font-co);
-    color: var(--back-co);
+    color: var(--back-co2);
 }
 
 @media screen and (max-width:1280px) {
