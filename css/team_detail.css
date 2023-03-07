@@ -120,7 +120,8 @@ body {
 }
 .sub-title {
     display: inline-block;
-    padding-left: 50px;
+    padding-left: 100px;
+    padding-right: 20px;
     margin-bottom: 30px;
     line-height: 40px;
     border-bottom: 1px solid var(--font-co);
@@ -147,7 +148,8 @@ body {
 }
 .ref-title {
     display: inline-block;
-    padding-left: 50px;
+    padding-left: 100px;
+    padding-right: 20px;
     margin-bottom: 30px;
     line-height: 40px;
     border-bottom: 1px solid var(--font-co);
@@ -170,7 +172,9 @@ body {
     display: inline-block;
     line-height: 40px;
     border-bottom: 1px solid var(--font-co);
-    padding-left: 50px;
+    padding-left: 100px;
+    padding-right: 20px;
+    margin-bottom: 50px;
 }
 .sk-mysw {
     display: flex;
@@ -190,16 +194,42 @@ body {
 }
 /* skill----------------------------- */
 /* issue */
+.issue {
+    width: 100%;
+    height: 100%;
+    margin: 100px 0;
+}
 .issue .inner {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 500px;
-    margin: 100px 0;
 }
 
-.case, .solution {
+.case-title{
+    display: inline-block;
+    line-height: 40px;
+    border-bottom: 1px solid var(--font-co);
+    padding-left: 100px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+.sol-title {
+    display: inline-block;
+    line-height: 40px;
+    border-bottom: 1px solid var(--font-co);
+    padding-left: 20px;
+    padding-right: 100px;
+    margin-bottom: 50px;
+}
+.iss-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.case-img, .sol-img {
     width: 600px;
     height: 500px;
     background-color: var(--back-co);
