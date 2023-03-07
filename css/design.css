@@ -121,8 +121,13 @@ body {
     margin-left: 10vh;
     cursor: default;
 }
-
+.tag .inner {
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
+}
 .tag-txt {
+    width: 100%;
     font-size: 40px;
     font-weight: 600;
     letter-spacing: -0.02em;

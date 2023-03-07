@@ -11,9 +11,4 @@
         slidesPerView: 1,
     });
     // json fetch
-    loadItems().then((design)=>{
-        items.forEach((ele, index) => {
-
-        })
-    })
 })()
