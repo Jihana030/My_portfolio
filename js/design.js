@@ -4,8 +4,8 @@
     //explain 제목 설명
     const exTitle = document.querySelector('.ex-title');
     const exDetail = document.querySelector('.ex-detail');
-    // 슬라이드 엑티브
-    const sidActive = document.querySelector('.swiper-slide-active');
+    // see detail
+    const thumSee = document.querySelector('.thum-txt');
     
     // json fetch
     function loadItems(){
@@ -30,6 +30,7 @@
                     if(swiper.realIndex === (idx)){
                         exTitle.innerHTML = `${ele.title}`;
                         exDetail.innerHTML = `${ele.detail}`;
+                        thumSee.href = `${ele.url}`;
                     }
                 },
             }
