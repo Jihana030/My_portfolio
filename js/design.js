@@ -27,7 +27,6 @@
             on: {
                 activeIndexChange : function() {
                     //이벤트 또는 조건문으로 이용하면 된다.
-                    console.log(`${swiper.realIndex}, ${idx}`);
                     if(swiper.realIndex === (idx)){
                         exTitle.innerHTML = `${ele.title}`;
                         exDetail.innerHTML = `${ele.detail}`;
