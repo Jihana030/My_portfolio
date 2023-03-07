@@ -16,7 +16,7 @@
     --font-co: #1e1e1e;
     --font-co2: #fff;
     --back-co: #c2c2c2;
-    --back-co2: #cdac7d;
+    --back-co2: #7badd0;
 }
 
 /* 절대로 위의 줄은 1번 줄에 배치 */
@@ -98,12 +98,12 @@ body {
 
 .hea_this {
     background-color: var(--font-co);
-    color: var(--back-co2);
+    color: var(--font-co2);
 }
 
 .hea_a:hover {
     background-color: var(--font-co);
-    color: var(--back-co2);
+    color: var(--font-co2);
 }
 
 @media screen and (max-width:1280px) {
