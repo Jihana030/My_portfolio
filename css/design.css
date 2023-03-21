@@ -161,12 +161,13 @@ body {
 }
 .side-img {
     position: absolute;
-    top: 0;
+    top: 18vh;
     right: 0;
-    width: 30vw;
-    height: 30vw;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
-    background-color: var(--back-co2);
+    object-fit: scale-down;
+    /* background-color: var(--back-co2); */
     z-index: 1;
 }
 .side-2th {
@@ -219,7 +220,10 @@ body {
 .thum-slide {
     text-align: center;
     font-size: 18px;
-    background: var(--back-co);
+    width: 50vw;
+    height: 38vh;
+    background: var(--font-co2);
+    object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,8 +291,9 @@ body {
     text-align: center;
     border: 1px solid var(--font-co);
     border-radius: 50%;
+    background-color: #ffffff50;
     left: 30%;
-    bottom: -25%;
+    bottom: -15%;
     z-index: 9;
     cursor: pointer;
     font-weight: 800;
@@ -336,7 +341,7 @@ body {
     .thum-see {
         width: 100px;
         height: 100px;
-        bottom: -20%;
+        bottom: -8%;
     }
 
     .thum-txt {
@@ -349,20 +354,27 @@ body {
         left: 50%;
     }
 }
+@media screen and (max-width:980px) {
+    .thum-see {
+        bottom: -10%;
+    }
+}
 
 /* thumnail---------------------- */
 /* explain */
 .explain {
     position: absolute;
     width: 100%;
-    left: 70%;
+    height: 50%;
+    margin-top: 100px;
+    left: 50vw;
+    transition: all 0.3s;
 }
 
 .ex-inner {
     position: absolute;
     left: 0;
     top: 0;
-    padding-bottom: 1vw;
     transition: all 0.7s;
 }
 
@@ -376,16 +388,23 @@ body {
 }
 
 @media screen and (max-width: 1280px) {
+    .explain {
+        left: 45vw;
+        margin-top: 60px;
+    }
     .ex-title {
         font-size: 30px;
     }
 }
 
 @media screen and (max-width: 950px) {
+    .explain {
+        left: 30vw;
+        margin-top: 10px;
+    }
     .ex-inner {
         top: 13vh;
         margin-bottom: 0;
-        padding-bottom: 0;
     }
 }
 
