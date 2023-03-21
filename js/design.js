@@ -22,30 +22,34 @@
     }
     loadItems().then((design)=>{
         design.forEach((ele, idx) => {
-            
+        // slide 내용 함수
+        function slideContents(){
+            if(swiper.realIndex === (idx)){
+                for(let i=0; i<=swiper.realIndex; i++){
+                    thumImg[i].src = `${ele.image}`
+                }
+                side1th.src = `${ele.side}`
+                side2th.src = `${ele.side}`
+                side3th.src = `${ele.side}`
+                exTitle.innerHTML = `${ele.title}`;
+                exDetail.innerHTML = `${ele.detail}`;
+                thumSee.href = `${ele.url}`;
+            }
+        }
         // swiper
         var swiper = new Swiper(".mySwiper", {
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            autoplay: {
+                delay: 5000,
+            },
             // loop: true, //루프 버그 극혐
             slidesPerView: 1,
             on: {
-                activeIndexChange : function() {
-                    //이벤트 또는 조건문으로 이용하면 된다.
-                    if(swiper.realIndex === (idx)){
-                        for(let i=0; i<=swiper.realIndex; i++){
-                            thumImg[i].src = `${ele.image}`
-                        }
-                        side1th.src = `${ele.side}`
-                        side2th.src = `${ele.side}`
-                        side3th.src = `${ele.side}`
-                        exTitle.innerHTML = `${ele.title}`;
-                        exDetail.innerHTML = `${ele.detail}`;
-                        thumSee.href = `${ele.url}`;
-                    }
-                },
+                beforeResize : slideContents,
+                activeIndexChange : slideContents,
             }
         });
             
