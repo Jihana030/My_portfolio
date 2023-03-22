@@ -42,13 +42,13 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            effect: "fade",
             autoplay: {
-                delay: 5000,
+                delay: 2000,
             },
             // loop: true, //루프 버그 극혐
             slidesPerView: 1,
             on: {
-                beforeResize : slideContents,
                 activeIndexChange : slideContents,
             }
         });
