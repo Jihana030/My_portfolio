@@ -21,6 +21,65 @@
             "url":"https://www.loud.kr/gelato/portfolio/3190531",
             "title":"메타버스 느낌",
             "detail":"메타버스라는<br>사이트의 목적에 가깝게 디자인하였습니다.<br>긴 이름을 살리면서도<br>메타버스의 느낌이 날 수 있게<br>고민을 많이 하였습니다."
+        },
+        {
+            "image":"../img/valbaner_thum.png",
+            "side":"../img/valbaner_side.png",
+            "tag1":"#로고",
+            "tag2":"#디자인",
+            "tag3":"#이벤트 배너",
+            "tag4":"#valentineEvent",
+            "url":"../img/valentineEvent.png",
+            "title":"발렌타인 이벤트",
+            "detail":"발렌타인에 어울리는<br>초콜렛색과 분홍색을 포인트로<br>구성하였습니다.<br>"
+        },
+        {
+            "image":"../img/newbaner_thum.png",
+            "side":"../img/newbaner_side.png",
+            "tag1":"#로고",
+            "tag2":"#디자인",
+            "tag3":"#이벤트 배너",
+            "tag4":"#newseason",
+            "url":"https://www.loud.kr/gelato/portfolio/3190531",
+            "title":"새학기 이벤트",
+            "detail":"3월의 새학기를<br>맞아서 계획해보았습니다.<br>새학기에 필요할 것 위주로<br>사진을 모아 배치하였습니다."
+        }
+    ],
+    "personal": [
+        {
+            "image":"../img/disirack_main.jpg",
+            "side":"../img/disirack_side.png",
+            "tag1":"#코딩",
+            "tag2":"#기능구현",
+            "tag3":"#클론코딩",
+            "tag4":"#도시락통",
+            "url":"https://jihana030.github.io/dosiraktong_clone/",
+            "title":"도시락통 사이트 클론코딩",
+            "detail":"다양한 기능이<br>있는 사이트를 찾아<br>클론코딩하였습니다.<br>구성된 기능은 최대한 구현하기 위해<br>시도하였습니다."
+        }
+    ],
+    "team": [
+        {
+            "image":"../img/knotted_main.png",
+            "side":"../img/knotted_side.png",
+            "tag1":"#팀프로젝트",
+            "tag2":"#다양한 기능구현",
+            "tag3":"#코딩",
+            "tag4":"#노티드 도넛",
+            "url":"",
+            "title":"로그인, 회원가입, 마이페이지",
+            "detail":"노티드 도넛이라는<br>브랜드 이미지에 맞춰<br>디자인을 시도하였습니다.<br>로그인, 회원가입에<br>필수적으로 들어가는 기능을<br>모두 구현하기위해 시도하였습니다."
+        },
+        {
+            "image":"../img/disirack_main.jpg",
+            "side":"../img/disirack_side.png",
+            "tag1":"#팀프로젝트",
+            "tag2":"#다양한 기능구현",
+            "tag3":"#코딩",
+            "tag4":"#호그와트 학교 사이트",
+            "url":"",
+            "title":"도입부, 교수 소개, 학교 연혁",
+            "detail":"호그와트라는 학교사이트에<br>필요한, 마법같은,<br>보통 사이트에서 찾아보기 어려운 기능위주로<br>구현하였습니다."
         }
     ]
 }
