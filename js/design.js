@@ -22,6 +22,19 @@
     }
     loadItems().then((design)=>{
         design.forEach((ele, idx) => {
+        // 각 내용 json
+        if(idx === 0){
+            for(let i=0; i<=0; i++){
+                thumImg[i].src = `${ele.image}`
+            }
+            side1th.src = `${ele.side}`
+            side2th.src = `${ele.side}`
+            side3th.src = `${ele.side}`
+            exTitle.innerHTML = `${ele.title}`;
+            exDetail.innerHTML = `${ele.detail}`;
+            thumSee.href = `${ele.url}`;
+        }
+        
         // slide 내용 함수
         function slideContents(){
             if(swiper.realIndex === (idx)){
@@ -44,7 +57,7 @@
             },
             effect: "fade",
             autoplay: {
-                delay: 2000,
+                delay: 5000,
             },
             // loop: true, //루프 버그 극혐
             slidesPerView: 1,
