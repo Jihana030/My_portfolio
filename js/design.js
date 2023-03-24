@@ -13,6 +13,11 @@
     const side1th = document.querySelector('.side-1th');
     const side2th = document.querySelector('.side-2th');
     const side3th = document.querySelector('.side-3th');
+    // tag txt
+    const tagTxt1 = document.querySelectorAll('.tag1');
+    const tagTxt2 = document.querySelectorAll('.tag2');
+    const tagTxt3 = document.querySelectorAll('.tag3');
+    const tagTxt4 = document.querySelectorAll('.tag4');
     
     // json fetch
     function loadItems(){
@@ -27,6 +32,10 @@
             for(let i=0; i<=0; i++){
                 thumImg[i].src = `${ele.image}`
             }
+            tagTxt1.innerHTML = `#${ele.tag1}`
+            tagTxt2.innerHTML = `#${ele.tag2}`
+            tagTxt3.innerHTML = `#${ele.tag3}`
+            tagTxt4.innerHTML = `#${ele.tag4}`
             side1th.src = `${ele.side}`
             side2th.src = `${ele.side}`
             side3th.src = `${ele.side}`
