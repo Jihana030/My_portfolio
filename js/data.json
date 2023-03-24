@@ -82,8 +82,8 @@
             "detail":"노티드 도넛이라는<br>브랜드 이미지에 맞춰<br>디자인을 시도하였습니다.<br>로그인, 회원가입에<br>필수적으로 들어가는 기능을<br>모두 구현하기위해 시도하였습니다."
         },
         {
-            "image":"../img/disirack_main.jpg",
-            "side":"../img/disirack_side.png",
+            "image":"../img/hogwarts_main.png",
+            "side":"../img/hogwarts_side.png",
             "tag1":"팀프로젝트",
             "tag2":"다양한 기능구현",
             "tag3":"코딩",

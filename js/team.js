@@ -23,7 +23,7 @@
     function loadItems(){
         return fetch("../js/data.json")
         .then((response)=>response.json())
-        .then((json)=>json.design);
+        .then((json)=>json.team);
     }
     loadItems().then((design)=>{
         design.forEach((ele, idx) => {
