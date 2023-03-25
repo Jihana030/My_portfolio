@@ -99,7 +99,9 @@
                 }
             ],
             "issue":"",
-            "solution":""
+            "solution":"",
+            "fixDesign":"",
+            "fixCode":"https://github.com/Jihana030/knotted_teeam.git"
         },
         {
             "image":"../img/hogwarts_thum.png",
@@ -112,23 +114,17 @@
             "title":"도입부, 교수 소개, 학교 연혁",
             "detail":"호그와트라는 학교사이트에<br>필요한, 마법같은,<br>보통 사이트에서 찾아보기 어려운 기능위주로<br>구현하였습니다.",
             "mainImg":"../img/hogwarts_main.png",
-            "reference":[
-                {
-                    "img1":"../img/hogwarts_raff1.png",
-                    "img2":"../img/hogwarts_raff2.png",
-                    "img3":"../img/hogwarts_raff3.png",
-                    "img4":"../img/hogwarts_raff4.png"
-                }
-            ],
-            "skill":[
-                {
-                    "img1":"../img/hogwarts_tech1.png",
-                    "img2":"../img/hogwarts_tech1.png",
-                    "img3":"../img/hogwarts_tech1.png"
-                }
-            ],
+            "ref1":"../img/hogwarts_raff1.png",
+            "ref2":"../img/hogwarts_raff2.png",
+            "ref3":"../img/hogwarts_raff3.png",
+            "ref4":"../img/hogwarts_raff4.png",
+            "skill1":"../img/hogwarts_tech1.png",
+            "skill2":"../img/hogwarts_tech2.png",
+            "skill3":"../img/hogwarts_tech3.png",
             "issue":"",
-            "solution":""
+            "solution":"",
+            "fixDesign":"https://www.figma.com/file/ULv3Qc0FTqf1IzpnHLqbF2/harrypotter?node-id=0%3A1&t=tUWsEy0JKiL6TbL7-1",
+            "fixCode":"https://github.com/Jihana030/hogwarts_team.git"
         }
     ]
 }

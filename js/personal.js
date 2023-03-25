@@ -25,8 +25,8 @@
         .then((response)=>response.json())
         .then((json)=>json.personal);
     }
-    loadItems().then((design)=>{
-        design.forEach((ele, idx) => {
+    loadItems().then((personal)=>{
+        personal.forEach((ele, idx) => {
         // 각 내용 json
         if(idx === 0){
             for(let i=0; i<=0; i++){
