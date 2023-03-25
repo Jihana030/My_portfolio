@@ -133,9 +133,16 @@ body {
 /* mainImage */
 .mainImage {
     /* background-color: var(--back-co); */
-
     width: 100%;
     height: auto;
+    margin: 0 auto;
+}
+.mainImage .inner {
+    margin: 0 auto;
+    text-align: center;
+}
+.mainImg {
+    margin: 0 auto;
 }
 /* mainImage--------------------------- */
 /* reference */
@@ -191,9 +198,10 @@ body {
 .sk-sw {
     width: 1200px !important;
     height: 600px;
+    object-fit: fill;
 }
 .skimg {
-    object-fit: fill;
+    width: 100%;
 }
 /* skill----------------------------- */
 /* issue */
