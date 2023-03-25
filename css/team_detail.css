@@ -35,6 +35,7 @@ li {
 
 a {
     text-decoration: none;
+    color: var(--font-co);
 }
 
 img {
@@ -114,6 +115,21 @@ body {
 }
 
 /* header ------------------------- */
+/* fixed */
+.fixDsg, .fixCode {
+    width: 100px;
+    background-color: var(--back-co2);
+    color: var(--font-co2);
+    position: fixed;
+    right: 80px;
+    bottom: 10vh;
+    text-align: center;
+    padding: 10px;
+}
+.fixDsg {
+    bottom: 18vh;
+}
+/* fixed--------------------------------- */
 /* subject */
 .subject {
     margin: 100px 0;

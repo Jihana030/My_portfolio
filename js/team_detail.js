@@ -11,6 +11,10 @@
     const sk1 = document.querySelector('.sk1');
     const sk2 = document.querySelector('.sk2');
     const sk3 = document.querySelector('.sk3');
+    // fixed
+    const fixDsg = document.querySelector('.fixDsg');
+    const fixCode = document.querySelector('.fixCode');
+
     function loadItems(){
         return fetch("../js/data.json")
         .then((response)=>response.json())
@@ -18,6 +22,8 @@
     }
     loadItems().then((team)=>{
         team.forEach((ele, idx) => {
+            fixDsg.href =  `${ele.fixDesign}`;
+            fixCode.href = `${ele.fixCode}`;
             mainImg.src=`${ele.mainImg}`
             ref1.src=`${ele.ref1}`;
             ref2.src=`${ele.ref2}`;
