@@ -79,10 +79,30 @@
             "tag4":"노티드 도넛",
             "url":"https://jihana030.github.io/knotted_team/",
             "title":"로그인, 회원가입, 마이페이지",
-            "detail":"노티드 도넛이라는<br>브랜드 이미지에 맞춰<br>디자인을 시도하였습니다.<br>로그인, 회원가입에<br>필수적으로 들어가는 기능을<br>모두 구현하기위해 시도하였습니다."
+            "detail":"노티드 도넛이라는<br>브랜드 이미지에 맞춰<br>디자인을 시도하였습니다.<br>로그인, 회원가입에<br>필수적으로 들어가는 기능을<br>모두 구현하기위해 시도하였습니다.",
+            "mainImg":"../img/hogwarts_main.png",
+            "reference":[
+                {
+                    "img1":"../img/knotted_raff1.png",
+                    "img2":"../img/knotted_raff2.png",
+                    "img3":"../img/knotted_raff3.png",
+                    "img4":"../img/knotted_raff4.png",
+                    "img5":"../img/knotted_raff5.png"
+                }
+            ],
+            "skill":[
+                {
+                    "img1":"../img/knotted_tech1.png",
+                    "img2":"../img/knotted_tech2.png",
+                    "img3":"../img/knotted_tech3.png",
+                    "img4":"../img/knotted_tech4.png"
+                }
+            ],
+            "issue":"",
+            "solution":""
         },
         {
-            "image":"../img/hogwarts_main.png",
+            "image":"../img/hogwarts_thum.png",
             "side":"../img/hogwarts_side.png",
             "tag1":"팀프로젝트",
             "tag2":"다양한 기능구현",
@@ -90,7 +110,25 @@
             "tag4":"호그와트 학교 사이트",
             "url":"https://jihana030.github.io/hogwarts_team/",
             "title":"도입부, 교수 소개, 학교 연혁",
-            "detail":"호그와트라는 학교사이트에<br>필요한, 마법같은,<br>보통 사이트에서 찾아보기 어려운 기능위주로<br>구현하였습니다."
+            "detail":"호그와트라는 학교사이트에<br>필요한, 마법같은,<br>보통 사이트에서 찾아보기 어려운 기능위주로<br>구현하였습니다.",
+            "mainImg":"../img/hogwarts_main.png",
+            "reference":[
+                {
+                    "img1":"../img/hogwarts_raff1.png",
+                    "img2":"../img/hogwarts_raff2.png",
+                    "img3":"../img/hogwarts_raff3.png",
+                    "img4":"../img/hogwarts_raff4.png"
+                }
+            ],
+            "skill":[
+                {
+                    "img1":"../img/hogwarts_tech1.png",
+                    "img2":"../img/hogwarts_tech1.png",
+                    "img3":"../img/hogwarts_tech1.png"
+                }
+            ],
+            "issue":"",
+            "solution":""
         }
     ]
 }
