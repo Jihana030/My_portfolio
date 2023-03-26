@@ -105,6 +105,7 @@ body {
 .hea_a:hover {
     background-color: var(--font-co);
     color: var(--font-co2);
+    transition: all 1.7s;
 }
 
 @media screen and (max-width:1280px) {
@@ -116,7 +117,7 @@ body {
 
 /* header ------------------------- */
 /* fixed */
-.fixDsg, .fixCode {
+.fixDsg, .fixCode, .fixPage {
     width: 100px;
     background-color: var(--back-co2);
     color: var(--font-co2);
@@ -125,9 +126,17 @@ body {
     bottom: 10vh;
     text-align: center;
     padding: 10px;
+    border-radius: 10%;
+}
+.fixDsg:hover, .fixCode:hover, .fixPage:hover {
+    background-color: #68c0ff;
+    transition: background-color 1s;
 }
 .fixDsg {
     bottom: 18vh;
+}
+.fixPage {
+    bottom: 26vh;
 }
 /* fixed--------------------------------- */
 /* subject */
@@ -214,10 +223,12 @@ body {
 .sk-sw {
     width: 1200px !important;
     height: 600px;
-    object-fit: fill;
+    text-align: center;
+    background-color: var(--font-co2);
 }
 .skimg {
-    width: 100%;
+    width: auto;
+    height: 100%;
 }
 /* skill----------------------------- */
 /* issue */
