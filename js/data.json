@@ -79,29 +79,7 @@
             "tag4":"노티드 도넛",
             "url":"https://jihana030.github.io/knotted_team/",
             "title":"로그인, 회원가입, 마이페이지",
-            "detail":"노티드 도넛이라는<br>브랜드 이미지에 맞춰<br>디자인을 시도하였습니다.<br>로그인, 회원가입에<br>필수적으로 들어가는 기능을<br>모두 구현하기위해 시도하였습니다.",
-            "mainImg":"../img/hogwarts_main.png",
-            "reference":[
-                {
-                    "img1":"../img/knotted_raff1.png",
-                    "img2":"../img/knotted_raff2.png",
-                    "img3":"../img/knotted_raff3.png",
-                    "img4":"../img/knotted_raff4.png",
-                    "img5":"../img/knotted_raff5.png"
-                }
-            ],
-            "skill":[
-                {
-                    "img1":"../img/knotted_tech1.png",
-                    "img2":"../img/knotted_tech2.png",
-                    "img3":"../img/knotted_tech3.png",
-                    "img4":"../img/knotted_tech4.png"
-                }
-            ],
-            "issue":"",
-            "solution":"",
-            "fixDesign":"",
-            "fixCode":"https://github.com/Jihana030/knotted_teeam.git"
+            "detail":"노티드 도넛이라는<br>브랜드 이미지에 맞춰<br>디자인을 시도하였습니다.<br>로그인, 회원가입에<br>필수적으로 들어가는 기능을<br>모두 구현하기위해 시도하였습니다."
         },
         {
             "image":"../img/hogwarts_thum.png",
