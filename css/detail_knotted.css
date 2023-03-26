@@ -154,6 +154,7 @@ body {
     margin-bottom: 30px;
     line-height: 40px;
     border-bottom: 1px solid var(--font-co);
+    font-weight: 600;
 }
 .sub-info {
     padding-left: 100px;
@@ -191,6 +192,7 @@ body {
     margin-bottom: 30px;
     line-height: 40px;
     border-bottom: 1px solid var(--font-co);
+    font-weight: 600;
 }
 .ref-imgCnt {
     display: flex;
@@ -214,6 +216,7 @@ body {
     padding-left: 100px;
     padding-right: 20px;
     margin: 50px auto;
+    font-weight: 600;
 }
 .sk-mysw {
     display: flex;

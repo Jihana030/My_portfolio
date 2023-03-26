@@ -117,27 +117,33 @@ body {
 
 /* header ------------------------- */
 /* fixed */
+.fixed {
+    position: fixed;
+    bottom: 10vh;
+    z-index: 999999999;
+    right: 30px;
+}
+.fixed .inner {
+    display: flex;
+    flex-direction: column;
+}
 .fixDsg, .fixCode, .fixPage {
     width: 100px;
     background-color: var(--back-co2);
     color: var(--font-co2);
-    position: fixed;
-    right: 80px;
-    bottom: 10vh;
     text-align: center;
     padding: 10px;
     border-radius: 10%;
-    z-index: 999999999;
 }
 .fixDsg:hover, .fixCode:hover, .fixPage:hover {
     background-color: #68c0ff;
     transition: background-color 1s;
 }
 .fixDsg {
-    bottom: 18vh;
+    margin-bottom: 10px;
 }
 .fixPage {
-    bottom: 26vh;
+    margin-bottom: 10px;
 }
 /* fixed--------------------------------- */
 /* subject */
@@ -151,6 +157,7 @@ body {
     margin-bottom: 30px;
     line-height: 40px;
     border-bottom: 1px solid var(--font-co);
+    font-weight: 600;
 }
 .sub-info {
     padding-left: 100px;
@@ -187,6 +194,7 @@ body {
     margin-bottom: 30px;
     line-height: 40px;
     border-bottom: 1px solid var(--font-co);
+    font-weight: 600;
 }
 .ref-imgCnt {
     display: flex;
@@ -209,6 +217,7 @@ body {
     padding-left: 100px;
     padding-right: 20px;
     margin-bottom: 50px;
+    font-weight: 600;
 }
 .sk-mysw {
     display: flex;
