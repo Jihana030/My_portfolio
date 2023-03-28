@@ -214,14 +214,14 @@ body {
 
 .thumbnail .mySwiper {
     width: 45vw;
-    height: 377px;
+    height: 40vh;
 }
 
 .thum-slide {
     text-align: center;
     font-size: 18px;
-    width: 50vw;
-    height: 38vh;
+    width: 45vw;
+    height: 40vh;
     background: var(--font-co2);
     object-fit: cover;
     display: flex;
